@@ -1,6 +1,6 @@
 # Quomentum
 
-Quomentum is a WIP game designed around QuakeWorld physics.
+Quomentum is a WIP game based on QuakeWorld physics.
 
 ## Building
 
