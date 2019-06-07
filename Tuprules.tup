@@ -1,0 +1,17 @@
+.gitignore
+
+PROJ_ROOT = $(TUP_CWD)
+
+ifdef PROJ_ARCH
+include @(PROJ_ARCH).tup
+else
+include @(TUP_PLATFORM).tup
+endif
+
+CFLAGS += -Wall
+
+CFLAGS += -m64
+LDFLAGS += -m64
+
+!cc = |> ^ CC %f^ $(CC) $(CFLAGS) -c %f -o %o |> %B.o
+!ld = |> ^ LD %o^ $(CC) $(LDFLAGS) %f -o %o |>

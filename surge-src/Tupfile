@@ -1,0 +1,7 @@
+include_rules
+
+CFLAGS += $(SDL_CFLAGS)
+: foreach *.c |> !cc |> {objs}
+
+LDFLAGS += $(SDL_LDFLAGS)
+: {objs} |> !ld |> $(PROJ_ROOT)/dist/surge
