@@ -1,10 +1,10 @@
+#include <string.h>
+
 #include "defs.h"
 
-void init_params(params_t *params, int argc, char **argv) {
-	params->basedir = ".";
-
-	params->argc = argc;
-	params->argv = argv;
-
-	params->errstate = 0;
+int check_param(int argc, char **argv, const char *param) {
+  for (int i = 1; i < argc; i++) {
+		if (!strcmp(param, argv[i])) return i;
+	}
+	return 0;
 }

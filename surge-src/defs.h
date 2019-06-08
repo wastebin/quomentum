@@ -1,6 +1,8 @@
 #ifndef DEFS_H
 #define DEFS_H
 
+//#include "stdinc.h"
+
 #define GAME
 
 #define SURGE_VER 0.1
@@ -16,21 +18,6 @@
 
 #define BASENAME "files"
 
-typedef struct {
-	const char *basedir;
-	const char *userdir;
-	int argc;
-	char **argv;
-	void *membase;
-	int memsize;
-	int numcpus;
-	int errstate;
-} params_t;
-
-void init_params(params_t *, int, char **);
-
-extern params_t *host_params;
-
-#include "stdinc.h"
+int check_param(int, char **, const char *);
 
 #endif

@@ -1,4 +1,4 @@
 CC = gcc
 
-SDL_CFLAGS += `pkg-config sdl --cflags`
-SDL_LDFLAGS += `pkg-config sdl --libs`
+SDL_CFLAGS += `pkg-config sdl2 --cflags`
+SDL_LDFLAGS += `pkg-config sdl2 --libs`
