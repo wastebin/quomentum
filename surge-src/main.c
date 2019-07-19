@@ -23,6 +23,8 @@ int main(int argc, char **argv) {
 
 	puts("Surge engine " SURGE_VER_STR " (c) wastebin");
 
+	double ticks = 20;
+
 	if (ded) {
 		puts("Running in dedicated mode.");
 		for (;;) {

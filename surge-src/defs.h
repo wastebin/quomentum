@@ -5,7 +5,7 @@
 
 #define GAME
 
-#define SURGE_VER 0.1
+#define SURGE_VER 0.0
 #define SURGE_VER_PATCH 0
 #ifndef SURGE_VER_SUFFIX
 #define SURGE_VER_SUFFIX
